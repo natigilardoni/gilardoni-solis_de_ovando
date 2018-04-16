@@ -1,124 +1,74 @@
 <!DOCTYPE HTML>
-<html lang="es">
+<html>
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="title" content="NOMBRE DUPLA">
-<title>Nati & Tina</title>
-<!-- Search Engine -->
-<meta name="description" content="cambiar">
-<meta name="image" content="cambiar por una URL, debes deben la imagen en línea">
-<!-- Schema.org for Google -->
-<meta itemprop="name" content="cambiar">
-<meta itemprop="description" content="cambiar">
-<meta itemprop="image" content="cambiar por una URL, deben poner la imagen en línea">
-<!-- Twitter -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="cambiar">
-<meta name="twitter:description" content="cambiar">
-<!-- Open Graph general (Facebook, Pinterest & Google+) -->
-<meta name="og:title" content="cambiar">
-<meta name="og:description" content="cambiar">
-<meta name="og:image" content="cambiar">
-<meta name="og:url" content="cambiar">
-<meta name="og:site_name" content="cambiar">
-<meta name="og:locale" content="es_CL">
-<meta name="og:type" content="website">
-<!--ahora vinculamos los estilos-->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Poppins:300,600" rel="stylesheet">
-<link rel="stylesheet" href="estilo.css" type="text/css">
-</head>
-<body>
-<div id="contenido">
-<header>
-	<h1>NATI & TINA</h1>
-	<h2>Diseñando el Futuro</h2>
-</header>
-<video autoplay loop preload="loop" poster="video.jpg">
-	<source src="video.webm" type="video/webm">
-	<source src="RATSV.mp4" type="video/mp4">
-	<p>Tu navegador no soporta el elemento, actualízate.</p>
-</video>
-<h3>QUIENES SOMOS</h3>
-<div id="somos">
-	<div class="dupla primera">
-		<h4>NATALIA GILARDONI</h4>
-		<h5>Estudiante Diseño UC</h5>
-		<p>Jefa de Packaging La Marquesa</p>
-		<address><a href="mailto:mail@mail.com">ngilardoni@uc.cl</a></address>
-	</div><!--/dupla primera-->
-	<div class="dupla segunda">
-		<h4>AGUSTINA SOLIS DE OVANDO</h4>
-		<h5>Estudiante Diseño UC</h5>
-		<p>Diseño UC</p>
-		<address><a href="mailto:mail@mail.com">masolisdeovando@uc.cl</a></address>
-	</div><!--/dupla segunda-->
-	<hr />
-</div><!--/somos-->
-<h3>PORTAFOLIO</h3>
-<div id="portafolio">
-	<div class="item">
-		<figure><img src="SILLA.jpg"/></figure>
-	  	<h4>SILLA ACORDEON</h4>
-	  	<p>Silla MDF plegable.</p>
-	</div><!--/item-->
-	<div class="item">
-		<figure><img src="tina1.png"/></figure>
-	  	<h4>TIC TOC</h4>
-	  	<p>Juego interactivo para niños.</p>
-	</div><!--/item-->
-	<div class="item">
-		<figure><img src="dooi.jpg"/></figure>
-	  	<h4>DOOI</h4>
-	  	<p>Packaging stroopwafel.</p>
-	</div><!--/item-->
-	<div class="item">
-		<figure><img src="ZEFF.jpeg"/></figure>
-	  	<h4>ZEFF</h4>
-	  	<p>Imagen de marca cerveza artesanal.</p>
-	</div><!--/item-->
-	<div class="item">
-		<figure><img src="SPOT.jpeg"/></figure>
-	  	<h4>SPOT</h4>
-	  	<p>Mochila de seguridad para viajeros.</p>
-	</div><!--/item-->
-	<div class="item">
-		<figure><img src="isma.jpg"/></figure>
-	  	<h4>SILLA MOIRE</h4>
-	  	<p>Presentacion producto Diego Gajardo.</p>
-	</div><!--/item-->
-	<div class="item">
-		<figure><img src="SOPORTES.jpg"/></figure>
-	  	<h4>ILUMINACIÓN</h4>
-	  	<p>Experimentación con luz patrón muaré.</p>
-	</div><!--/item-->
-	<div class="item">
-		<figure><img src="RATS.jpg"/></figure>
-	  	<h4>RATS</h4>
-	  	<p>Asistente de frenos de ski.</p>
-	</div><!--/item-->
-	<div class="item">
-		<figure><img src="NATU.jpg"/></figure>
-	  	<h4>PACKAGING</h4>
-	  	<p>Regalos corporativos La Marquesa.</p>
-	</div><!--/item-->
-</div><!--/portafolio-->
-
-<footer>
-	<p>Procesos de Producción · primer semestre · 2018 · sección web</p>
-	<hr />
-</footer>
-
-</div><!--/contenido-->
-<script src="masonry.pkgd.min.js"></script>
+<title>Lo primero</title>
+<!-- Lo que sigue es un vínculo a un documento CSS que está dentro de la misma carpeta que el index.html -->
+<link href="style.css" rel="stylesheet">
+<!-- Lo que sigue es un vínculo a un documento CSS que está en línea -->
+<link href="https://fonts.googleapis.com/css?family=Passion+One:700" rel="stylesheet">
+<!-- Lo que sigue es JavaScript -->
 <script>
-window.onload = function() {
-var container = document.querySelector('#portafolio');
-var msnry = new Masonry( portafolio, {
-  itemSelector: '.item'
+var saludo = "Hola mundo!";
+
+console.log(saludo + " Yo soy la consola de JavaScript de tu Navegador");
+
+function miAlerta() {
+    alert(saludo + " Yo soy una alerta en tu Navegador");
+}
+</script>
+</head>
+
+<body>
+<div class="hidden">
+<h1>Hola mundo!</h1>
+<p>Tu navegador te mostró este documento <span id="timestamp"></span> segundos después de la medianoche UTC del 1 de enero de 1970 (así funciona el <a href="https://es.wikipedia.org/wiki/Tiempo_Unix" title="Tiempo Unix - Wikipedia, la enciclopedia libre">Tiempo Unix</a>). Puesto de un modo menos nerd, la fecha y hora en la que tu navegador te mostró este documento es <span id="timestring"></span>.</p>
+
+<h2>HTML y CSS</h2>
+<p>El documento que ahora ves tiene contenidos, con distintas jerarquías y estilos. Contenidos y jerarquías se describen mediante <abbr title="HyperText Markup Language">HTML</abbr>, mientras que el estilo se describe mediante <abbr title="Cascading Stylesheets">CSS</abbr>.</p>
+<p>Con estos dos lenguajes de descripción no podemos incluir interactividad dinámica en la página. Para poder hacerlo, es necesario utilizar un lenguaje de programación (como el que sigue).</p>
+<h2>JavaScript</h2>
+<h3>1. Desplegar una alerta con un click</h3>
+<!--otro comentario para anunciar que este botón contiene javascript-->
+<button onclick="miAlerta()">el botón</button>
+<p>Tomé el elemento <code>&lt;button&gt;…&lt;/button&gt;</code>, le agregué un atributo "OnClick", que en su variable contiene una función ya definida.</p>
+<h3>2. Jugar con la consola de javascript</h3>
+<p>Utiliza el "shortcut" de teclado que corresponda:</p>
+<ul>
+<li>Si estás usando <strong>Chrome</strong> en PC, presiona Ctrl + Shift + J. Si estás usando el mismo navegador en Mac, presiona Cmd + Alt + J</li>
+<li>Si estás usando <strong>Firefox</strong> en PC, presiona Ctrl + Shift + K. Si estás usando el mismo navegador en Mac, presiona: Cmd + Alt + K</li>
+<li>Si estás usando <strong>Safari</strong>, presiona: Cmd + Alt + C (aunque no debería estar usando este navegador, porque se solicitó tener uno de los dos anteriores instalados para este clase)</li>
+</ul>
+<p>Cuando aparezca la consola podrás leer un mensaje (que yo dejé programado; no es que aparezca por defecto).</p>
+<p>En la consola también puedes escribir algo. Intenta copiando, pegando, modificando y presionando Enter:</p>
+<pre><code>var sujeto = "Lorem";</code></pre>
+<pre><code>var adjetivo = "ipsum";</code></pre>
+<pre><code>sujeto +" es muy "+ adjetivo;</code></pre>
+<p>Lo que hiciste fue crear <strong>var</strong>iables, a las que asignaste "cadenas de caracteres". Pero no tendrías que ocupar comillas de utilizar números:</p>
+<pre><code>var primervalor = 20;</code></pre>
+<pre><code>var segundovalor = 30;</code></pre>
+<pre><code>primervalor + segundovalor;</code></pre>
+<p>Antes de que presiones Enter, una pregunta: ¿Qué crees que resultará, 50 o 2030?</p>
+<p>En caso que no le hayas acertado, podrías tener más suerte con lo que sigue: Piensa un número entre 1 y 10.</p>
+<pre><code>Math.floor((Math.random() * 10) + 1);</code></pre>
+<p>Tus opciones partían en 1, incrementándose tantas veces como lo permitiese la condición de menor o igual a 10:</p>
+<pre><code>for (var x=1; x<=10; x++){ console.log(x); }</code></pre>
+<h3>3. Manipular el DOM</h3>
+<p>Si revisas el código fuente de la página, notarás que el primer párrafo, justo bajo el título de <strong>Hola mundo!</strong>, hay espacios vacíos. El texto está "como puesto" allí con JavaScript.</p>
+<p>Manipular el DOM es como "photoshopear" una imagen. Si capturaste 3 elementos, y con Photoshop le agregas un cuarto, en ningún caso estás modificando lo que fue, en principio, capturado… pero sí se ve algo más "como puesto" allí.</p>
+</div>
+<script>
+var tiempo = Date.now();
+document.getElementById("timestamp").innerHTML = Math.round(tiempo/1000);
+var fecha = new Date();
+document.getElementById("timestring").innerHTML = fecha;
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(function() {
+    $('div').fadeIn(2000).removeClass('hidden');
 });
-};
 </script>
 </body>
 </html>
